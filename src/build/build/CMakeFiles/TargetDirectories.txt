@@ -1,0 +1,3 @@
+/home/mark/Projects/SDL2/src/build/build/CMakeFiles/SDL2Game.dir
+/home/mark/Projects/SDL2/src/build/build/CMakeFiles/edit_cache.dir
+/home/mark/Projects/SDL2/src/build/build/CMakeFiles/rebuild_cache.dir
