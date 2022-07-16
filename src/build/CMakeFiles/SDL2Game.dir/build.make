@@ -139,13 +139,58 @@ CMakeFiles/SDL2Game.dir/GameObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL2Game.dir/GameObject.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mark/Projects/SDL2/src/GameObject.cpp -o CMakeFiles/SDL2Game.dir/GameObject.cpp.s
 
+CMakeFiles/SDL2Game.dir/World.cpp.o: CMakeFiles/SDL2Game.dir/flags.make
+CMakeFiles/SDL2Game.dir/World.cpp.o: ../World.cpp
+CMakeFiles/SDL2Game.dir/World.cpp.o: CMakeFiles/SDL2Game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mark/Projects/SDL2/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SDL2Game.dir/World.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL2Game.dir/World.cpp.o -MF CMakeFiles/SDL2Game.dir/World.cpp.o.d -o CMakeFiles/SDL2Game.dir/World.cpp.o -c /home/mark/Projects/SDL2/src/World.cpp
+
+CMakeFiles/SDL2Game.dir/World.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL2Game.dir/World.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mark/Projects/SDL2/src/World.cpp > CMakeFiles/SDL2Game.dir/World.cpp.i
+
+CMakeFiles/SDL2Game.dir/World.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL2Game.dir/World.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mark/Projects/SDL2/src/World.cpp -o CMakeFiles/SDL2Game.dir/World.cpp.s
+
+CMakeFiles/SDL2Game.dir/Map.cpp.o: CMakeFiles/SDL2Game.dir/flags.make
+CMakeFiles/SDL2Game.dir/Map.cpp.o: ../Map.cpp
+CMakeFiles/SDL2Game.dir/Map.cpp.o: CMakeFiles/SDL2Game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mark/Projects/SDL2/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SDL2Game.dir/Map.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL2Game.dir/Map.cpp.o -MF CMakeFiles/SDL2Game.dir/Map.cpp.o.d -o CMakeFiles/SDL2Game.dir/Map.cpp.o -c /home/mark/Projects/SDL2/src/Map.cpp
+
+CMakeFiles/SDL2Game.dir/Map.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL2Game.dir/Map.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mark/Projects/SDL2/src/Map.cpp > CMakeFiles/SDL2Game.dir/Map.cpp.i
+
+CMakeFiles/SDL2Game.dir/Map.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL2Game.dir/Map.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mark/Projects/SDL2/src/Map.cpp -o CMakeFiles/SDL2Game.dir/Map.cpp.s
+
+CMakeFiles/SDL2Game.dir/Camera.cpp.o: CMakeFiles/SDL2Game.dir/flags.make
+CMakeFiles/SDL2Game.dir/Camera.cpp.o: ../Camera.cpp
+CMakeFiles/SDL2Game.dir/Camera.cpp.o: CMakeFiles/SDL2Game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mark/Projects/SDL2/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SDL2Game.dir/Camera.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL2Game.dir/Camera.cpp.o -MF CMakeFiles/SDL2Game.dir/Camera.cpp.o.d -o CMakeFiles/SDL2Game.dir/Camera.cpp.o -c /home/mark/Projects/SDL2/src/Camera.cpp
+
+CMakeFiles/SDL2Game.dir/Camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL2Game.dir/Camera.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mark/Projects/SDL2/src/Camera.cpp > CMakeFiles/SDL2Game.dir/Camera.cpp.i
+
+CMakeFiles/SDL2Game.dir/Camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL2Game.dir/Camera.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mark/Projects/SDL2/src/Camera.cpp -o CMakeFiles/SDL2Game.dir/Camera.cpp.s
+
 # Object files for target SDL2Game
 SDL2Game_OBJECTS = \
 "CMakeFiles/SDL2Game.dir/main.cpp.o" \
 "CMakeFiles/SDL2Game.dir/Game.cpp.o" \
 "CMakeFiles/SDL2Game.dir/Player.cpp.o" \
 "CMakeFiles/SDL2Game.dir/Window.cpp.o" \
-"CMakeFiles/SDL2Game.dir/GameObject.cpp.o"
+"CMakeFiles/SDL2Game.dir/GameObject.cpp.o" \
+"CMakeFiles/SDL2Game.dir/World.cpp.o" \
+"CMakeFiles/SDL2Game.dir/Map.cpp.o" \
+"CMakeFiles/SDL2Game.dir/Camera.cpp.o"
 
 # External object files for target SDL2Game
 SDL2Game_EXTERNAL_OBJECTS =
@@ -155,9 +200,12 @@ SDL2Game: CMakeFiles/SDL2Game.dir/Game.cpp.o
 SDL2Game: CMakeFiles/SDL2Game.dir/Player.cpp.o
 SDL2Game: CMakeFiles/SDL2Game.dir/Window.cpp.o
 SDL2Game: CMakeFiles/SDL2Game.dir/GameObject.cpp.o
+SDL2Game: CMakeFiles/SDL2Game.dir/World.cpp.o
+SDL2Game: CMakeFiles/SDL2Game.dir/Map.cpp.o
+SDL2Game: CMakeFiles/SDL2Game.dir/Camera.cpp.o
 SDL2Game: CMakeFiles/SDL2Game.dir/build.make
 SDL2Game: CMakeFiles/SDL2Game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mark/Projects/SDL2/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable SDL2Game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mark/Projects/SDL2/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable SDL2Game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SDL2Game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

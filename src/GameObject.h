@@ -6,10 +6,9 @@
 class GameObject
 {
 public:
-    Transform transform;
+    GameObject(SDL_Texture* _tex, Vector2<float> _pos, Vector2<int> _scale);
+    GameObject(){}
 
-    Sprite GetSprite() const;
-    SDL_Texture* tex;
-protected:
+    Transform transform;
     Sprite sprite;
 };

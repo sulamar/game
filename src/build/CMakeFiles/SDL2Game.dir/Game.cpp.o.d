@@ -275,7 +275,11 @@ CMakeFiles/SDL2Game.dir/Game.cpp.o: /home/mark/Projects/SDL2/src/Game.cpp \
  /home/mark/Projects/SDL2/src/GameObject.h \
  /home/mark/Projects/SDL2/src/Sprite.h \
  /home/mark/Projects/SDL2/src/Transform.h \
- /home/mark/Projects/SDL2/src/Map.h /usr/include/c++/12.1.0/memory \
+ /home/mark/Projects/SDL2/src/Map.h /usr/include/c++/12.1.0/fstream \
+ /usr/include/c++/12.1.0/bits/codecvt.h \
+ /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/basic_file.h \
+ /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/c++io.h \
+ /usr/include/c++/12.1.0/bits/fstream.tcc /usr/include/c++/12.1.0/memory \
  /usr/include/c++/12.1.0/bits/stl_tempbuf.h \
  /usr/include/c++/12.1.0/bits/stl_raw_storage_iter.h \
  /usr/include/c++/12.1.0/bits/align.h /usr/include/c++/12.1.0/bit \
@@ -291,4 +295,8 @@ CMakeFiles/SDL2Game.dir/Game.cpp.o: /home/mark/Projects/SDL2/src/Game.cpp \
  /usr/include/c++/12.1.0/bits/atomic_lockfree_defines.h \
  /usr/include/c++/12.1.0/backward/auto_ptr.h \
  /usr/include/c++/12.1.0/pstl/glue_memory_defs.h \
- /usr/include/c++/12.1.0/pstl/execution_defs.h
+ /usr/include/c++/12.1.0/pstl/execution_defs.h \
+ /home/mark/Projects/SDL2/src/Camera.h \
+ /home/mark/Projects/SDL2/src/World.h /usr/include/c++/12.1.0/list \
+ /usr/include/c++/12.1.0/bits/stl_list.h \
+ /usr/include/c++/12.1.0/bits/list.tcc

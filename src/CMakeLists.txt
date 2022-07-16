@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.23.2)
 project(SDL2Game)
 
-add_executable(${PROJECT_NAME} main.cpp Game.cpp Player.cpp Window.cpp GameObject.cpp)
+add_executable(${PROJECT_NAME} main.cpp Game.cpp Player.cpp Window.cpp GameObject.cpp World.cpp Map.cpp Camera.cpp)
 
 INCLUDE(FindPkgConfig)
 

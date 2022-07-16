@@ -42,22 +42,28 @@ void Game::Init()
 
 void Game::Run()
 {
-	SDL_Rect camera = {0,0,1080,720};
+	std::shared_ptr<Camera> camera = std::make_shared<Camera>();
 
 	std::unique_ptr<Window> window = std::make_unique<Window>("game", 1080, 720);
 
-	std::unique_ptr<Map<20,20>> map = std::make_unique<Map<20,20>>(window->renderer);
+	std::shared_ptr<Map> map = std::make_shared<Map>(); 
+	
+	std::shared_ptr<Player> player = std::make_shared<Player>(TextureManager::LoadTexture("../files/images/player.png", window->renderer), 
+	Vector2<float>(0.0f, 0.0f), Vector2<int>(32, 32));
+	
+	std::unique_ptr<World> world = std::make_unique<World>(map, player, camera);
+	
+	std::shared_ptr<GameObject> ground = std::make_shared<GameObject>(TextureManager::LoadTexture("../files/images/ground.png", window->renderer),
+	Vector2<float>(0.0f, 0.0f), Vector2<int>(32, 32));
 
-	std::unique_ptr<Player> player = std::make_unique<Player>(TextureManager::LoadTexture("../files/images/player.png", window->renderer), Vector2<float>(0.0f, 0.0f), Vector2<int>(32, 32));
-
-	map->LoadMap(level);
+	world->AddObject(ground);
 
 	SDL_Event e;
 
 	while(window->running)
 	{
-		camera.x = player->transform.position.x;
-		camera.y = player->transform.position.y;
+		camera->transform.position.x = player->transform.position.x;
+		camera->transform.position.y = player->transform.position.y;
 
 		while(SDL_PollEvent(&e))
 		{
@@ -72,8 +78,7 @@ void Game::Run()
 
 		window->Clear();
 
-		map->RenderMap(camera);
-		player->Render(window->renderer);
+		world->Render(window->renderer);
 
 		window->Display();
 

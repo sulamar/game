@@ -12,17 +12,10 @@ Player::Player(SDL_Texture* _tex, Vector2<float> _pos, Vector2<int> _scale)
     sprite.src.w = transform.scale.x;
     sprite.src.h = transform.scale.y;
 
+	sprite.dst.w = transform.scale.x;
+	sprite.dst.h = transform.scale.y;
+
     speed = 5.0f;
-}
-
-void Player::Render(SDL_Renderer* ren)
-{
-    sprite.dst.x = transform.position.x;
-    sprite.dst.y = transform.position.y;
-    sprite.dst.w = transform.scale.x * 2;
-    sprite.dst.h = transform.scale.y * 2;
-
-    SDL_RenderCopy(ren, sprite.texture, &sprite.src, &sprite.dst);
 }
 
 void Player::HandleInput(SDL_Event& e)

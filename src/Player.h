@@ -7,9 +7,7 @@ class Player : public GameObject
 
 public:
     Player(SDL_Texture* _tex, Vector2<float> _pos, Vector2<int> _scale);
-
-    void Render(SDL_Renderer* ren);
-
+    Player(){}
     void HandleInput(SDL_Event& e);
 
 private:
