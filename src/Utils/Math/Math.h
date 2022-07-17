@@ -32,6 +32,20 @@ struct Vector2
         return Multiply(v);
     }
 
+    Vector2<T> operator=(const Vector2<T>& v) 
+    {
+        x = v.x;
+        y = v.y;
+        return Vector2<T>(x, y);
+    }
+
+    Vector2<T> operator-(const Vector2<T>& v)
+    {
+        x = x - v.x;
+        y = y - v.y;
+        return Vector2<T>(x, y);
+    }
+
     bool operator==(const Vector2<T>& v) const
     {
         return x == v.x && y == v.y;

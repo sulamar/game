@@ -271,7 +271,7 @@ CMakeFiles/SDL2Game.dir/main.cpp.o: /home/mark/Projects/SDL2/src/main.cpp \
  /usr/include/c++/12.1.0/bits/ostream.tcc /usr/include/c++/12.1.0/istream \
  /usr/include/c++/12.1.0/bits/istream.tcc \
  /home/mark/Projects/SDL2/src/Player.h \
- /home/mark/Projects/SDL2/src/Math.h \
+ /home/mark/Projects/SDL2/src/Utils/Math/Math.h \
  /home/mark/Projects/SDL2/src/GameObject.h \
  /home/mark/Projects/SDL2/src/Sprite.h \
  /home/mark/Projects/SDL2/src/Transform.h \

@@ -194,9 +194,10 @@ CMakeFiles/SDL2Game.dir/World.cpp.o: \
  /usr/include/SDL2/SDL_locale.h /usr/include/SDL2/SDL_misc.h \
  /home/mark/Projects/SDL2/src/Sprite.h \
  /home/mark/Projects/SDL2/src/Transform.h \
- /home/mark/Projects/SDL2/src/Math.h /usr/include/c++/12.1.0/iostream \
- /usr/include/c++/12.1.0/ostream /usr/include/c++/12.1.0/ios \
- /usr/include/c++/12.1.0/iosfwd /usr/include/c++/12.1.0/bits/stringfwd.h \
+ /home/mark/Projects/SDL2/src/Utils/Math/Math.h \
+ /usr/include/c++/12.1.0/iostream /usr/include/c++/12.1.0/ostream \
+ /usr/include/c++/12.1.0/ios /usr/include/c++/12.1.0/iosfwd \
+ /usr/include/c++/12.1.0/bits/stringfwd.h \
  /usr/include/c++/12.1.0/bits/memoryfwd.h \
  /usr/include/c++/12.1.0/bits/postypes.h /usr/include/c++/12.1.0/cwchar \
  /usr/include/c++/12.1.0/exception \

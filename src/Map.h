@@ -8,5 +8,7 @@ class Map
 {
 public:
     Map();
+
+    //Loads map from file
     std::vector<std::vector<char>> LoadMap(const char* path);
 };

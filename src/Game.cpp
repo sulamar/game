@@ -1,30 +1,5 @@
 #include "Game.h"
 
-int level[20][20] =
-{
-	{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},	
-	{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-	{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-	{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-	{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-	{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-	{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-	{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-	{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-	{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-	{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},	
-	{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-	{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-	{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-	{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-	{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},	
-	{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-	{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-	{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-	{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
-};
-
-
 void Game::Init()
 {
 	if (SDL_Init(SDL_INIT_EVERYTHING) < 0)
@@ -37,14 +12,16 @@ void Game::Init()
 		std::cout << "SDL_image could not be initialized!" << SDL_GetError() << std::endl;
 	}
 
-	
 }
 
 void Game::Run()
 {
-	std::shared_ptr<Camera> camera = std::make_shared<Camera>();
+	const int SCREEN_WIDTH = 1080;
+	const int SCREEN_HEIGHT = 720;
 
-	std::unique_ptr<Window> window = std::make_unique<Window>("game", 1080, 720);
+	std::shared_ptr<Camera> camera = std::make_shared<Camera>(Vector2<int>(SCREEN_WIDTH, SCREEN_HEIGHT), Vector2<float>(0, 0));
+
+	std::unique_ptr<Window> window = std::make_unique<Window>("game", SCREEN_WIDTH, SCREEN_HEIGHT);
 
 	std::shared_ptr<Map> map = std::make_shared<Map>(); 
 	
@@ -55,15 +32,18 @@ void Game::Run()
 	
 	std::shared_ptr<GameObject> ground = std::make_shared<GameObject>(TextureManager::LoadTexture("../files/images/ground.png", window->renderer),
 	Vector2<float>(0.0f, 0.0f), Vector2<int>(32, 32));
+	std::shared_ptr<GameObject> grass= std::make_shared<GameObject>(TextureManager::LoadTexture("../files/images/grass.png", window->renderer),
+	Vector2<float>(0.0f, 0.0f), Vector2<int>(32, 32));
 
 	world->AddObject(ground);
 
 	SDL_Event e;
 
+	camera->SetTarget(player);
+
+	//Mainloop
 	while(window->running)
 	{
-		camera->transform.position.x = player->transform.position.x;
-		camera->transform.position.y = player->transform.position.y;
 
 		while(SDL_PollEvent(&e))
 		{
@@ -75,12 +55,10 @@ void Game::Run()
 
 			player->HandleInput(e);
 		}
-
-		window->Clear();
+		
+		camera->FollowTarget();
 
 		world->Render(window->renderer);
-
-		window->Display();
 
 		SDL_Delay(10);
 

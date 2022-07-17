@@ -1,7 +1,8 @@
 CMakeFiles/SDL2Game.dir/Player.cpp.o: \
  /home/mark/Projects/SDL2/src/Player.cpp /usr/include/stdc-predef.h \
  /home/mark/Projects/SDL2/src/Player.h \
- /home/mark/Projects/SDL2/src/Math.h /usr/include/c++/12.1.0/iostream \
+ /home/mark/Projects/SDL2/src/Utils/Math/Math.h \
+ /usr/include/c++/12.1.0/iostream \
  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \

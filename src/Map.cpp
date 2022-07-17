@@ -12,27 +12,25 @@ std::vector<std::vector<char>> Map::LoadMap(const char* path)
 
     std::vector<std::vector<char>> map;
 
+    int lines = 0;
+
     while(std::getline(file, line))
     {
         std::vector<char> row;
 
         for(char& c : line)
-        {
-            row.push_back(c);
+        {      
+            if(c != ' ')
+                row.push_back(c);   
         }
+
 
         map.push_back(row);
+
+        lines++;
     }
 
-    for(std::vector<char>& row : map)
-    {
-        for(char& c : row)
-        {
-            std::cout << c;
-        }
-        
-        std::cout << "\n";
-    }
-
+    std::cout << map.size() << std::endl;
+    
     return map;
 }

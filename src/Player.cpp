@@ -27,18 +27,22 @@ void Player::HandleInput(SDL_Event& e)
 			case SDLK_a:
                 transform.velocity.x = -1;
 				transform.position.x += transform.velocity.x * speed;
+				std::cout << transform.position.x << std::endl;
 				break;
 			case SDLK_d:
                 transform.velocity.x = 1;
 				transform.position.x += transform.velocity.x * speed; 
+				std::cout << transform.position.x << std::endl;
 				break;
 			case SDLK_w:
                 transform.velocity.y = -1;    
 				transform.position.y += transform.velocity.y * speed;
+				std::cout << transform.position.y << std::endl;
 				break;
 			case SDLK_s:
                 transform.velocity.y = 1;
 				transform.position.y += transform.velocity.y * speed;
+				std::cout << transform.position.y << std::endl;
 				break;
 			default:
 				break;

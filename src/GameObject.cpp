@@ -16,3 +16,4 @@ GameObject::GameObject(SDL_Texture* _tex, Vector2<float> _pos, Vector2<int> _sca
 	sprite.dst.w = transform.scale.x;
 	sprite.dst.h = transform.scale.y;
 }
+
