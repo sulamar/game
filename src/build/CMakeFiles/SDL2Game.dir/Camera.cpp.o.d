@@ -194,7 +194,7 @@ CMakeFiles/SDL2Game.dir/Camera.cpp.o: \
  /usr/include/SDL2/SDL_locale.h /usr/include/SDL2/SDL_misc.h \
  /home/mark/Projects/SDL2/src/Sprite.h \
  /home/mark/Projects/SDL2/src/Transform.h \
- /home/mark/Projects/SDL2/src/Utils/Math/Math.h \
+ /home/mark/Projects/SDL2/src/utils/math/Math.h \
  /usr/include/c++/12.1.0/iostream /usr/include/c++/12.1.0/ostream \
  /usr/include/c++/12.1.0/ios /usr/include/c++/12.1.0/iosfwd \
  /usr/include/c++/12.1.0/bits/stringfwd.h \
@@ -267,8 +267,15 @@ CMakeFiles/SDL2Game.dir/Camera.cpp.o: \
  /usr/include/c++/12.1.0/bits/locale_facets.tcc \
  /usr/include/c++/12.1.0/bits/basic_ios.tcc \
  /usr/include/c++/12.1.0/bits/ostream.tcc /usr/include/c++/12.1.0/istream \
- /usr/include/c++/12.1.0/bits/istream.tcc /usr/include/c++/12.1.0/memory \
+ /usr/include/c++/12.1.0/bits/istream.tcc \
+ /home/mark/Projects/SDL2/src/Window.h /usr/include/SDL2/SDL_image.h \
+ /usr/include/SDL2/SDL.h /usr/include/c++/12.1.0/vector \
  /usr/include/c++/12.1.0/bits/stl_uninitialized.h \
+ /usr/include/c++/12.1.0/bits/stl_vector.h \
+ /usr/include/c++/12.1.0/bits/stl_bvector.h \
+ /usr/include/c++/12.1.0/bits/vector.tcc \
+ /home/mark/Projects/SDL2/src/Collider.h \
+ /home/mark/Projects/SDL2/src/Rigidbody.h /usr/include/c++/12.1.0/memory \
  /usr/include/c++/12.1.0/bits/stl_tempbuf.h \
  /usr/include/c++/12.1.0/bits/stl_raw_storage_iter.h \
  /usr/include/c++/12.1.0/bits/align.h /usr/include/c++/12.1.0/bit \

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcore.a CMakeFiles/core.dir/Camera.cpp.o CMakeFiles/core.dir/Collider.cpp.o CMakeFiles/core.dir/GameObject.cpp.o CMakeFiles/core.dir/Map.cpp.o CMakeFiles/core.dir/Player.cpp.o CMakeFiles/core.dir/Projectile.cpp.o CMakeFiles/core.dir/Tile.cpp.o CMakeFiles/core.dir/World.cpp.o CMakeFiles/core.dir/Animation.cpp.o
+/usr/bin/ranlib libcore.a

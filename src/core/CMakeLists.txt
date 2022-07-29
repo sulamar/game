@@ -1,0 +1,1 @@
+add_library(core Camera.cpp Collider.cpp GameObject.cpp Map.cpp Player.cpp Projectile.cpp Tile.cpp World.cpp Animation.cpp)

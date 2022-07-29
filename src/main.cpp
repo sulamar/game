@@ -2,9 +2,8 @@
 
 int main(int argc, char* args[])
 {
-	Game game;
-	game.Init();
-	game.Run();
+	if(engine::Game::Init())
+		engine::Game::Run();
 
 	return 0;
 }

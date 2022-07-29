@@ -1,3 +1,9 @@
 /home/mark/Projects/SDL2/src/build/CMakeFiles/SDL2Game.dir
 /home/mark/Projects/SDL2/src/build/CMakeFiles/edit_cache.dir
 /home/mark/Projects/SDL2/src/build/CMakeFiles/rebuild_cache.dir
+/home/mark/Projects/SDL2/src/build/core/CMakeFiles/core.dir
+/home/mark/Projects/SDL2/src/build/core/CMakeFiles/edit_cache.dir
+/home/mark/Projects/SDL2/src/build/core/CMakeFiles/rebuild_cache.dir
+/home/mark/Projects/SDL2/src/build/graphics/CMakeFiles/graphics.dir
+/home/mark/Projects/SDL2/src/build/graphics/CMakeFiles/edit_cache.dir
+/home/mark/Projects/SDL2/src/build/graphics/CMakeFiles/rebuild_cache.dir

@@ -129,29 +129,31 @@ SDL2Game/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2Game.dir/build.make CMakeFiles/SDL2Game.dir/build
 .PHONY : SDL2Game/fast
 
-Camera.o: Camera.cpp.o
-.PHONY : Camera.o
+#=============================================================================
+# Target rules for targets named core
 
-# target to build an object file
-Camera.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2Game.dir/build.make CMakeFiles/SDL2Game.dir/Camera.cpp.o
-.PHONY : Camera.cpp.o
+# Build rule for target.
+core: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core
+.PHONY : core
 
-Camera.i: Camera.cpp.i
-.PHONY : Camera.i
+# fast build rule for target.
+core/fast:
+	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/build
+.PHONY : core/fast
 
-# target to preprocess a source file
-Camera.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2Game.dir/build.make CMakeFiles/SDL2Game.dir/Camera.cpp.i
-.PHONY : Camera.cpp.i
+#=============================================================================
+# Target rules for targets named graphics
 
-Camera.s: Camera.cpp.s
-.PHONY : Camera.s
+# Build rule for target.
+graphics: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 graphics
+.PHONY : graphics
 
-# target to generate assembly for a file
-Camera.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2Game.dir/build.make CMakeFiles/SDL2Game.dir/Camera.cpp.s
-.PHONY : Camera.cpp.s
+# fast build rule for target.
+graphics/fast:
+	$(MAKE) $(MAKESILENT) -f graphics/CMakeFiles/graphics.dir/build.make graphics/CMakeFiles/graphics.dir/build
+.PHONY : graphics/fast
 
 Game.o: Game.cpp.o
 .PHONY : Game.o
@@ -176,126 +178,6 @@ Game.s: Game.cpp.s
 Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2Game.dir/build.make CMakeFiles/SDL2Game.dir/Game.cpp.s
 .PHONY : Game.cpp.s
-
-GameObject.o: GameObject.cpp.o
-.PHONY : GameObject.o
-
-# target to build an object file
-GameObject.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2Game.dir/build.make CMakeFiles/SDL2Game.dir/GameObject.cpp.o
-.PHONY : GameObject.cpp.o
-
-GameObject.i: GameObject.cpp.i
-.PHONY : GameObject.i
-
-# target to preprocess a source file
-GameObject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2Game.dir/build.make CMakeFiles/SDL2Game.dir/GameObject.cpp.i
-.PHONY : GameObject.cpp.i
-
-GameObject.s: GameObject.cpp.s
-.PHONY : GameObject.s
-
-# target to generate assembly for a file
-GameObject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2Game.dir/build.make CMakeFiles/SDL2Game.dir/GameObject.cpp.s
-.PHONY : GameObject.cpp.s
-
-Map.o: Map.cpp.o
-.PHONY : Map.o
-
-# target to build an object file
-Map.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2Game.dir/build.make CMakeFiles/SDL2Game.dir/Map.cpp.o
-.PHONY : Map.cpp.o
-
-Map.i: Map.cpp.i
-.PHONY : Map.i
-
-# target to preprocess a source file
-Map.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2Game.dir/build.make CMakeFiles/SDL2Game.dir/Map.cpp.i
-.PHONY : Map.cpp.i
-
-Map.s: Map.cpp.s
-.PHONY : Map.s
-
-# target to generate assembly for a file
-Map.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2Game.dir/build.make CMakeFiles/SDL2Game.dir/Map.cpp.s
-.PHONY : Map.cpp.s
-
-Player.o: Player.cpp.o
-.PHONY : Player.o
-
-# target to build an object file
-Player.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2Game.dir/build.make CMakeFiles/SDL2Game.dir/Player.cpp.o
-.PHONY : Player.cpp.o
-
-Player.i: Player.cpp.i
-.PHONY : Player.i
-
-# target to preprocess a source file
-Player.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2Game.dir/build.make CMakeFiles/SDL2Game.dir/Player.cpp.i
-.PHONY : Player.cpp.i
-
-Player.s: Player.cpp.s
-.PHONY : Player.s
-
-# target to generate assembly for a file
-Player.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2Game.dir/build.make CMakeFiles/SDL2Game.dir/Player.cpp.s
-.PHONY : Player.cpp.s
-
-Window.o: Window.cpp.o
-.PHONY : Window.o
-
-# target to build an object file
-Window.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2Game.dir/build.make CMakeFiles/SDL2Game.dir/Window.cpp.o
-.PHONY : Window.cpp.o
-
-Window.i: Window.cpp.i
-.PHONY : Window.i
-
-# target to preprocess a source file
-Window.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2Game.dir/build.make CMakeFiles/SDL2Game.dir/Window.cpp.i
-.PHONY : Window.cpp.i
-
-Window.s: Window.cpp.s
-.PHONY : Window.s
-
-# target to generate assembly for a file
-Window.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2Game.dir/build.make CMakeFiles/SDL2Game.dir/Window.cpp.s
-.PHONY : Window.cpp.s
-
-World.o: World.cpp.o
-.PHONY : World.o
-
-# target to build an object file
-World.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2Game.dir/build.make CMakeFiles/SDL2Game.dir/World.cpp.o
-.PHONY : World.cpp.o
-
-World.i: World.cpp.i
-.PHONY : World.i
-
-# target to preprocess a source file
-World.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2Game.dir/build.make CMakeFiles/SDL2Game.dir/World.cpp.i
-.PHONY : World.cpp.i
-
-World.s: World.cpp.s
-.PHONY : World.s
-
-# target to generate assembly for a file
-World.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2Game.dir/build.make CMakeFiles/SDL2Game.dir/World.cpp.s
-.PHONY : World.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -330,27 +212,11 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... SDL2Game"
-	@echo "... Camera.o"
-	@echo "... Camera.i"
-	@echo "... Camera.s"
+	@echo "... core"
+	@echo "... graphics"
 	@echo "... Game.o"
 	@echo "... Game.i"
 	@echo "... Game.s"
-	@echo "... GameObject.o"
-	@echo "... GameObject.i"
-	@echo "... GameObject.s"
-	@echo "... Map.o"
-	@echo "... Map.i"
-	@echo "... Map.s"
-	@echo "... Player.o"
-	@echo "... Player.i"
-	@echo "... Player.s"
-	@echo "... Window.o"
-	@echo "... Window.i"
-	@echo "... Window.s"
-	@echo "... World.o"
-	@echo "... World.i"
-	@echo "... World.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

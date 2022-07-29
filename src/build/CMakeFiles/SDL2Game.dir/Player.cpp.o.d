@@ -1,7 +1,7 @@
 CMakeFiles/SDL2Game.dir/Player.cpp.o: \
  /home/mark/Projects/SDL2/src/Player.cpp /usr/include/stdc-predef.h \
  /home/mark/Projects/SDL2/src/Player.h \
- /home/mark/Projects/SDL2/src/Utils/Math/Math.h \
+ /home/mark/Projects/SDL2/src/utils/math/Math.h \
  /usr/include/c++/12.1.0/iostream \
  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -269,4 +269,31 @@ CMakeFiles/SDL2Game.dir/Player.cpp.o: \
  /usr/include/SDL2/SDL_timer.h /usr/include/SDL2/SDL_version.h \
  /usr/include/SDL2/SDL_locale.h /usr/include/SDL2/SDL_misc.h \
  /home/mark/Projects/SDL2/src/Sprite.h \
- /home/mark/Projects/SDL2/src/Transform.h
+ /home/mark/Projects/SDL2/src/Transform.h \
+ /home/mark/Projects/SDL2/src/Window.h /usr/include/SDL2/SDL_image.h \
+ /usr/include/SDL2/SDL.h /usr/include/c++/12.1.0/vector \
+ /usr/include/c++/12.1.0/bits/stl_uninitialized.h \
+ /usr/include/c++/12.1.0/bits/stl_vector.h \
+ /usr/include/c++/12.1.0/bits/stl_bvector.h \
+ /usr/include/c++/12.1.0/bits/vector.tcc \
+ /home/mark/Projects/SDL2/src/Collider.h \
+ /home/mark/Projects/SDL2/src/Rigidbody.h \
+ /home/mark/Projects/SDL2/src/Projectile.h \
+ /home/mark/Projects/SDL2/src/utils/tools/Framerate.h \
+ /usr/include/c++/12.1.0/memory \
+ /usr/include/c++/12.1.0/bits/stl_tempbuf.h \
+ /usr/include/c++/12.1.0/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/12.1.0/bits/align.h /usr/include/c++/12.1.0/bit \
+ /usr/include/c++/12.1.0/bits/uses_allocator.h \
+ /usr/include/c++/12.1.0/bits/unique_ptr.h /usr/include/c++/12.1.0/tuple \
+ /usr/include/c++/12.1.0/bits/shared_ptr.h \
+ /usr/include/c++/12.1.0/bits/shared_ptr_base.h \
+ /usr/include/c++/12.1.0/bits/allocated_ptr.h \
+ /usr/include/c++/12.1.0/ext/aligned_buffer.h \
+ /usr/include/c++/12.1.0/ext/concurrence.h \
+ /usr/include/c++/12.1.0/bits/shared_ptr_atomic.h \
+ /usr/include/c++/12.1.0/bits/atomic_base.h \
+ /usr/include/c++/12.1.0/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/12.1.0/backward/auto_ptr.h \
+ /usr/include/c++/12.1.0/pstl/glue_memory_defs.h \
+ /usr/include/c++/12.1.0/pstl/execution_defs.h

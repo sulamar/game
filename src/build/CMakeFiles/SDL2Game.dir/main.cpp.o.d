@@ -1,18 +1,18 @@
 CMakeFiles/SDL2Game.dir/main.cpp.o: /home/mark/Projects/SDL2/src/main.cpp \
  /usr/include/stdc-predef.h /home/mark/Projects/SDL2/src/Game.h \
- /home/mark/Projects/SDL2/src/Window.h /usr/include/SDL2/SDL_image.h \
- /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_main.h \
- /usr/include/SDL2/SDL_stdinc.h /usr/include/SDL2/SDL_config.h \
- /usr/include/SDL2/SDL_platform.h /usr/include/SDL2/begin_code.h \
- /usr/include/SDL2/close_code.h /usr/include/sys/types.h \
- /usr/include/features.h /usr/include/features-time64.h \
- /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \
- /usr/include/sys/cdefs.h /usr/include/bits/long-double.h \
- /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
- /usr/include/bits/types.h /usr/include/bits/typesizes.h \
- /usr/include/bits/time64.h /usr/include/bits/types/clock_t.h \
- /usr/include/bits/types/clockid_t.h /usr/include/bits/types/time_t.h \
- /usr/include/bits/types/timer_t.h \
+ /home/mark/Projects/SDL2/src/graphics/Window.h \
+ /usr/include/SDL2/SDL_image.h /usr/include/SDL2/SDL.h \
+ /usr/include/SDL2/SDL_main.h /usr/include/SDL2/SDL_stdinc.h \
+ /usr/include/SDL2/SDL_config.h /usr/include/SDL2/SDL_platform.h \
+ /usr/include/SDL2/begin_code.h /usr/include/SDL2/close_code.h \
+ /usr/include/sys/types.h /usr/include/features.h \
+ /usr/include/features-time64.h /usr/include/bits/wordsize.h \
+ /usr/include/bits/timesize.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/long-double.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/bits/time64.h \
+ /usr/include/bits/types/clock_t.h /usr/include/bits/types/clockid_t.h \
+ /usr/include/bits/types/time_t.h /usr/include/bits/types/timer_t.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/stddef.h \
  /usr/include/bits/stdint-intn.h /usr/include/endian.h \
  /usr/include/bits/endian.h /usr/include/bits/endianness.h \
@@ -270,16 +270,16 @@ CMakeFiles/SDL2Game.dir/main.cpp.o: /home/mark/Projects/SDL2/src/main.cpp \
  /usr/include/c++/12.1.0/bits/basic_ios.tcc \
  /usr/include/c++/12.1.0/bits/ostream.tcc /usr/include/c++/12.1.0/istream \
  /usr/include/c++/12.1.0/bits/istream.tcc \
- /home/mark/Projects/SDL2/src/Player.h \
- /home/mark/Projects/SDL2/src/Utils/Math/Math.h \
- /home/mark/Projects/SDL2/src/GameObject.h \
- /home/mark/Projects/SDL2/src/Sprite.h \
- /home/mark/Projects/SDL2/src/Transform.h \
- /home/mark/Projects/SDL2/src/Map.h /usr/include/c++/12.1.0/fstream \
- /usr/include/c++/12.1.0/bits/codecvt.h \
- /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/basic_file.h \
- /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/c++io.h \
- /usr/include/c++/12.1.0/bits/fstream.tcc /usr/include/c++/12.1.0/memory \
+ /home/mark/Projects/SDL2/src/core/Player.h \
+ /home/mark/Projects/SDL2/src/core/../utils/math/Math.h \
+ /home/mark/Projects/SDL2/src/core/GameObject.h \
+ /home/mark/Projects/SDL2/src/core/Sprite.h \
+ /home/mark/Projects/SDL2/src/core/Transform.h \
+ /home/mark/Projects/SDL2/src/core/Collider.h \
+ /home/mark/Projects/SDL2/src/core/Rigidbody.h \
+ /home/mark/Projects/SDL2/src/core/Projectile.h \
+ /home/mark/Projects/SDL2/src/core/Animation.h \
+ /usr/include/c++/12.1.0/memory \
  /usr/include/c++/12.1.0/bits/stl_tempbuf.h \
  /usr/include/c++/12.1.0/bits/stl_raw_storage_iter.h \
  /usr/include/c++/12.1.0/bits/align.h /usr/include/c++/12.1.0/bit \
@@ -296,7 +296,25 @@ CMakeFiles/SDL2Game.dir/main.cpp.o: /home/mark/Projects/SDL2/src/main.cpp \
  /usr/include/c++/12.1.0/backward/auto_ptr.h \
  /usr/include/c++/12.1.0/pstl/glue_memory_defs.h \
  /usr/include/c++/12.1.0/pstl/execution_defs.h \
- /home/mark/Projects/SDL2/src/Camera.h \
- /home/mark/Projects/SDL2/src/World.h /usr/include/c++/12.1.0/list \
+ /usr/include/c++/12.1.0/unordered_map \
+ /usr/include/c++/12.1.0/bits/hashtable.h \
+ /usr/include/c++/12.1.0/bits/hashtable_policy.h \
+ /usr/include/c++/12.1.0/bits/enable_special_members.h \
+ /usr/include/c++/12.1.0/bits/node_handle.h \
+ /usr/include/c++/12.1.0/bits/unordered_map.h \
+ /usr/include/c++/12.1.0/bits/erase_if.h \
+ /home/mark/Projects/SDL2/src/core/Map.h /usr/include/c++/12.1.0/fstream \
+ /usr/include/c++/12.1.0/bits/codecvt.h \
+ /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/basic_file.h \
+ /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/c++io.h \
+ /usr/include/c++/12.1.0/bits/fstream.tcc \
+ /home/mark/Projects/SDL2/src/core/Camera.h \
+ /home/mark/Projects/SDL2/src/core/World.h /usr/include/c++/12.1.0/list \
  /usr/include/c++/12.1.0/bits/stl_list.h \
- /usr/include/c++/12.1.0/bits/list.tcc
+ /usr/include/c++/12.1.0/bits/list.tcc \
+ /home/mark/Projects/SDL2/src/core/Tile.h /usr/include/c++/12.1.0/map \
+ /usr/include/c++/12.1.0/bits/stl_tree.h \
+ /usr/include/c++/12.1.0/bits/stl_map.h \
+ /usr/include/c++/12.1.0/bits/stl_multimap.h \
+ /home/mark/Projects/SDL2/src/utils/tools/Framerate.h \
+ /usr/include/SDL2/SDL_mixer.h
