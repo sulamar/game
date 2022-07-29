@@ -85,10 +85,10 @@ namespace engine
 		float currentTime = tools::TimeInSeconds();
 		std::cout << "currenttime" << currentTime << std::endl;
 
-		GameStates::state = GameStates::States::GAME_ACTIVE;
+		state = States::GAME_ACTIVE;
 
 		//Mainloop
-		while(GameStates::state == GameStates::States::GAME_ACTIVE)
+		while(state == States::GAME_ACTIVE)
 		{
 			Uint32 startTicks = SDL_GetTicks();
 
@@ -109,7 +109,7 @@ namespace engine
 					switch(e.type)
 					{
 						case SDL_QUIT:
-							window.running = false;
+							state = States::GAME_OVER;
 					}
 
 					

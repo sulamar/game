@@ -317,4 +317,5 @@ CMakeFiles/SDL2Game.dir/Game.cpp.o: /home/mark/Projects/SDL2/src/Game.cpp \
  /usr/include/c++/12.1.0/bits/stl_map.h \
  /usr/include/c++/12.1.0/bits/stl_multimap.h \
  /home/mark/Projects/SDL2/src/utils/tools/Framerate.h \
- /usr/include/SDL2/SDL_mixer.h /usr/include/SDL2/SDL_keyboard.h
+ /usr/include/SDL2/SDL_mixer.h /usr/include/SDL2/SDL_keyboard.h \
+ /home/mark/Projects/SDL2/src/core/GameStates.h
