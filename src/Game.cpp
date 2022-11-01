@@ -31,9 +31,7 @@ namespace engine
 		
 		const Vector2<int> tileScale(32 * 2, 32 * 2);
 		const Vector2<int> playerScale(32 * 3, 32 * 3);
-
-		//TODO To get level height and width from world render map function and give it to camera so camera does not go out of bounds...
-		//TODO FIX PLAYER STUFF NO POINTERS?? REFERENCES?...
+		
 	
 	    Window window("game", SCREEN_WIDTH, SCREEN_HEIGHT);
 		float refreshRate = (float)tools::GetRefreshRate(window.GetWindow());
